@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+// App container
+.app-container {
+  background: $lighter;
+  display: grid;
+  min-height: 100vh;
+}
+
+// App
+.app-frame {
+  background: $lightest;
+  box-shadow: $box-shadow;
+  height: $app-height;
+  margin: auto;
+  overflow: auto;
+  position: relative;
+  width: $app-width;
+}
+
+// Page
+.page {
+  padding: $app-padding;
+}

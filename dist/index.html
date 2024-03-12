@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="/index.f7626f62.css">
+    <script defer="" src="/index.59a40e7a.js"></script>
+  </head>
+  <body class="app-container">
+    <div id="app" class="app-frame">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="brand">Sortable</h1>
+      </nav>
+
+      <!-- Page -->
+      <main class="page">
+        <!-- Sortable -->
+        <h3>Rank Your Favorite Food:</h3>
+        <div class="sortable">
+          <span class="sr-only assistive" aria-live="assertive"></span>
+          <span id="sortable-space" class="sr-only">Press space-bar to re-order or sort list</span>
+          <ul>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Tacos
+              <span aria-hidden="true">🌮</span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Burritos
+              <span aria-hidden="true">🌯</span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Pizza
+              <span aria-hidden="true"> 🍕 </span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Waffles
+              <span aria-hidden="true"> 🥞 </span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              HotDogs
+              <span aria-hidden="true"> 🌭 </span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Hamburgers
+              <span aria-hidden="true"> 🍔 </span>
+            </li>
+            <li tabindex="0" draggable="true" data-sortable="" aria-describedby="sortable-space">
+              <span class="material-symbols-outlined" aria-hidden="true">
+                swap_vert
+              </span>
+              Broccoli
+              <span aria-hidden="true">🥦</span>
+            </li>
+          </ul>
+        </div>
+
+        <hr>
+
+        <!-- JSON -->
+        <h4>JSON:</h4>
+        <textarea id="json" class="json" readonly=""></textarea>
+      </main>
+    </div>
+  </body>
+</html>

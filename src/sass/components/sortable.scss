@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+// Sortables
+
+.sortable {
+  border: 1px solid $lighter;
+
+  &.dragging {
+    ul {
+      cursor: grabbing;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    cursor: grab;
+
+    li {
+      padding: 8px 12px;
+
+      + li {
+        border-top: 1px solid $lighter;
+      }
+
+      &:hover {
+        .material-symbols-outlined {
+          color: $primary;
+          transform: scale(1.1);
+        }
+      }
+
+      &.active-drag {
+        background-color: transparentize($primary, 0.5);
+      }
+    }
+  }
+
+  .material-symbols-outlined {
+    color: $light;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 4px;
+    transition: color $t ease, transform $t ease;
+  }
+}
+
+// .custom-img {
+//   position: absolute;
+//   top: -9999px;
+// }

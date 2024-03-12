@@ -1,0 +1,292 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #1e1f1f;
+  background: #fff;
+  margin: 0;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline #49d37c;
+  transition: color .3s;
+}
+
+a:focus, a:hover {
+  color: #49d37c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  margin: 0 0 .2em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+h6 {
+  color: #868e8f;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1.4em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f0f5f5;
+  height: 0;
+  margin: 1.4em 0;
+}
+
+hr.light {
+  border-top-color: #ffffff1a;
+}
+
+.btn, button {
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 1px 1px #0003;
+  background: #3f4243;
+  border: 0;
+  border-radius: 4px;
+  height: 50px;
+  padding: 0 1em;
+  font-family: inherit;
+  font-size: 1.125em;
+  font-weight: 200;
+  line-height: 50px;
+  transition: background-color .3s, box-shadow .3s, transform .3s;
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0 -4px #0000001a;
+}
+
+.btn:focus, .btn:hover, button:focus, button:hover {
+  background-color: #383a3b;
+}
+
+.btn:active, button:active {
+  transform: scale(.98);
+  box-shadow: inset 0 -1px #00000026;
+}
+
+.btn.lighter, button.lighter {
+  color: #868e8f;
+  background-color: #f0f5f5;
+  box-shadow: inset 0 -4px #0000000f;
+}
+
+.btn.lighter:focus, .btn.lighter:hover, button.lighter:focus, button.lighter:hover {
+  background-color: #e7efef;
+}
+
+.btn.light, button.light {
+  color: #3f4243;
+  background-color: #b2bcbd;
+}
+
+.btn.light:focus, .btn.light:hover, button.light:focus, button.light:hover {
+  background-color: #aab5b6;
+}
+
+.btn.medium, button.medium {
+  background-color: #868e8f;
+}
+
+.btn.medium:focus, .btn.medium:hover, button.medium:focus, button.medium:hover {
+  background-color: #7e8788;
+}
+
+.btn.info, button.info {
+  background-color: #2eb2d0;
+}
+
+.btn.info:focus, .btn.info:hover, button.info:focus, button.info:hover {
+  background-color: #2ba7c3;
+}
+
+.btn.danger, button.danger {
+  background-color: #cd2e38;
+}
+
+.btn.danger:focus, .btn.danger:hover, button.danger:focus, button.danger:hover {
+  background-color: #c12b35;
+}
+
+.btn.success, button.success {
+  background-color: #49d37c;
+}
+
+.btn.success:focus, .btn.success:hover, button.success:focus, button.success:hover {
+  background-color: #3dd073;
+}
+
+.btn.warning, button.warning {
+  background-color: #f9b746;
+}
+
+.btn.warning:focus, .btn.warning:hover, button.warning:focus, button.warning:hover {
+  background-color: #f9b137;
+}
+
+.btn.primary, button.primary {
+  background-color: #49d37c;
+}
+
+.btn.primary:focus, .btn.primary:hover, button.primary:focus, button.primary:hover {
+  background-color: #3dd073;
+}
+
+.btn.pill, button.pill {
+  border-radius: 25px;
+  padding: 0 25px;
+}
+
+.btn[disabled], button[disabled] {
+  color: #868e8f;
+  cursor: auto;
+  text-shadow: none;
+  background-color: #cdd4d5;
+  box-shadow: inset 0 -4px #00000008;
+}
+
+.btn[disabled]:focus, .btn[disabled]:hover, button[disabled]:focus, button[disabled]:hover {
+  background-color: #cdd4d5;
+}
+
+.json {
+  color: inherit;
+  font-family: monospace;
+  font-size: inherit;
+  resize: none;
+  border: 1px solid #e1ebeb;
+  width: 100%;
+  height: 200px;
+  padding: 1em;
+  line-height: 1.6em;
+  transition: border-color .3s, box-shadow .3s;
+  display: block;
+}
+
+.json:focus {
+  border-color: #49d37c;
+  outline: none;
+  box-shadow: inset 0 0 6px #49d37c80;
+}
+
+.sortable {
+  border: 1px solid #f0f5f5;
+}
+
+.sortable.dragging ul {
+  cursor: grabbing;
+}
+
+.sortable ul {
+  cursor: grab;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sortable ul li {
+  padding: 8px 12px;
+}
+
+.sortable ul li + li {
+  border-top: 1px solid #f0f5f5;
+}
+
+.sortable ul li:hover .material-symbols-outlined {
+  color: #49d37c;
+  transform: scale(1.1);
+}
+
+.sortable ul li.active-drag {
+  background-color: #49d37c80;
+}
+
+.sortable .material-symbols-outlined {
+  color: #b2bcbd;
+  margin-right: 4px;
+  font-size: 20px;
+  transition: color .3s, transform .3s;
+  display: inline-block;
+}
+
+.app-container {
+  background: #f0f5f5;
+  min-height: 100vh;
+  display: grid;
+}
+
+.app-frame {
+  background: #fff;
+  width: 380px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: auto;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.page {
+  padding: 30px;
+}
+
+.navbar {
+  color: #fff;
+  background: #49d37c;
+  height: 60px;
+  padding: 0 30px;
+}
+
+.brand {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  line-height: 60px;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+/*# sourceMappingURL=index.f7626f62.css.map */
